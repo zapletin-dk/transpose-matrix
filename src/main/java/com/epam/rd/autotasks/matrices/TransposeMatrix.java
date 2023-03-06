@@ -3,23 +3,19 @@ import java.util.Arrays;
 
 public class TransposeMatrix {
     public static int[][] transpose(int[][] matrix) {
-        int row =matrix[0].length;
+        int row = matrix[0].length;
         int column = matrix.length;
-        int [][]transpositedMatrix = new int[row][column];
-        for (int i =0; i < row; i++){
-            for (int j =0; j < column; j++){
-                transpositedMatrix[i][j] = matrix[j][i];
+        int[][] transposedMatrix = new int[row][column];
+        for (int i = 0; i < row; i++){
+            for (int j = 0; j < column; j++){
+                transposedMatrix[i][j] = matrix[j][i];
             }
         }
-
-        return transpositedMatrix;
+        return transposedMatrix;
     }
 
     public static void main(String[] args) {
-
         System.out.println("Test your code here!\n");
-
-        // Get a result of your code
 
         int[][] matrix = {
                 {1, 2, 3},
